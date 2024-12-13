@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37 Beans and Dreams</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="ImageSource/Logo.png" alt="37 Beans and Dreams Logo" class="logo-img">
+            <h1>37 Beans and Dreams</h1>
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="home(homepage).html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sign Up & Book Your Cart Cafe Experience</h1>
+        <form id="booking-form">
+            <!-- Sign-up Section -->
+            <fieldset>
+                <legend>Sign Up Information</legend>
+                <p>Please provide the information:</p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea><br>
+            </fieldset>
+
+            <!-- Booking Section -->
+            <fieldset>
+                <legend>Booking Details</legend>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="service">Cart Event Service:</label>
+                <select id="service" name="service">
+                    <option value="30">30 Cup Espresso Package</option>
+                    <option value="50">50 Cup Espresso Package</option>
+                    <option value="80">80 Cup Espresso Package</option>
+                    <option value="100">100 Cup Espresso Package</option>
+                </select><br>
+            </fieldset>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 37 Beans and Dreams. All rights reserved.</p>
+    </footer>
+
+    <!-- Script Section -->
+    <script src="scriptBooking.js" defer></script>
+</body>
+</html>
